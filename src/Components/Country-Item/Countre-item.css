@@ -1,0 +1,8 @@
+.C-item:hover{
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+.C-item:active{
+    background-color: #a90e2e;
+}
