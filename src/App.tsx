@@ -29,15 +29,15 @@ function App() {
 
 
   return (
-    <div className="m-auto d-flex" style={{width:'890px'}}>
-      <div className="Country-List w-25">
+    <div className="m-auto d-flex mt-2" style={{width:'890px'}}>
+      <div className="Country-List w-25 overflow-scroll" style={{height:'400px'}} >
         <h1>Countries</h1>
         {countries.map(country => (
           <CountryItem name={country.name} key={country.id} onClick={() => setClickedCountry(country.name)}/>
         ))}
       </div>
       <div className="info-block w-75">
-        <InfoBlock/>
+        <InfoBlock name={clickedCountry}/>
       </div>
     </div>
   );
